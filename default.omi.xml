@@ -1,0 +1,10 @@
+<omixml>
+    <midiconnectionin midiName="Arduino Micro" />
+    <midiconnectionin midiName="MPK mini play" />
+    <midiconnectionout midiName="Microsoft GS Wavetable Synth" />
+
+    <!-- This standar is one I created before learning midi -->
+    <analogdigitalcompressioncom comIdName="COM20" nomenclatureName="FootPattern" />
+	<jomiudptarget idName="Local" ip="127.0.0.1" port="2501" />
+
+</omixml>
