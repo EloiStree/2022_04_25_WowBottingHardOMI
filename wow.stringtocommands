@@ -1,0 +1,46 @@
+wow:selectmurlocandattack♦jomi:0↕   tab↕ 10> 1↕ 50>  2↕ 10>  3↕
+//wow:selectmurlocandattack♦jomi:0↕ d↓50  tab↕ 10> 1↕ 50>  2↕ 10>  3↕
+//wow:selectmurlocandattack♦jomi:0↕   tab↕ 10> 1↕ 50>  2↕ 10>  3↕
+//wow:selectmurlocandattack♦jomi:0↕ d↓ ⌛300 d↑  tab↕  100> 1↕ 50> 4↕ 100>  2↕ 100>  3↕
+
+//wow:selectmurlocandattack♦jomi:0↕   tab↕  100> 1↕ 50> 4↕ 100>  2↕ 100>  3↕
+wow:switchandattack♦macro:wow:switchuser♦in 100| stack:doandgonext:attackorhealsequence
+wow:switchuser♦stack:doandgonext:nextplayer♦IN 50|jomiraw:ms:0
+wow:followmain♦jomi:9↕ 
+
+wow:heal♦jomi: 0↕ 500> 3↕ 
+wow:attack♦macro:wow:selectmurlocandattack
+
+wow:switchfollowMain♦in 0|macro:wow:switchuser♦in 100|macro:wow:followmain
+
+wow:switchandfire♦macro:wow:switchuser♦in 100|jomi:9↕ 10> tab↕  10> 1↕  10> 5↕  10> 2↕ 
+//wow:switchandattack♦macro:wow:switchuser♦in 100|jomi:6↕ 10> 5↕ tab↕ 10> 2↕  200> 1↕  8↕ 10> 7↕ 
+wow:switchandheal♦macro:wow:switchuser♦in 100|jomi:7↕ 10> 8↕  
+
+wow:switchandattack♦macro:wow:switchuser♦in 100|jomi: 100> m↕ 50> l↕  200> 0↕   50> 9↕ 50>  8↕ 50> tab↕ 50> 7↕ 50> 6↕ 50> 5↕ 50> 4↕ 50> 3↕ 50> 2↕ 50> 1↕               
+
+//wow:switchandattack♦macro:wow:switchuser♦jomi: f↕ 20> m↕ 20> tab↕ ♦stack:doandgonext:nextbarpower
+
+
+
+wow:switchpower0♦macro:wow:switchuser♦in 100|jomi: tab↕  50> M↕
+wow:switchpower9♦macro:wow:switchuser♦in 100|jomi: tab↕  50> L↕
+wow:switchpower8♦macro:wow:switchuser♦in 100|jomi: tab↕  50> 0↕
+wow:allpower0♦ricochet 0 500 900 1300:macro:wow:switchpower0
+wow:allpower9♦ricochet 0 500 900 1300:macro:wow:switchpower9
+wow:allpower8♦ricochet 0 500 900 1300:macro:wow:switchpower8
+
+wow:switchpower012♦macro:wow:switchuser♦in 100|jomi: tab↕  50> 0↕ 50> 1↕ 50> 2↕
+wow:allpower012♦ricochet 0 500 900 1300:macro:wow:switchpower012
+
+wow:switchpetattack♦macro:wow:switchuser♦in 100|jomi: f1↕ 20> f2↕
+wow:switchpetcomeback♦macro:wow:switchuser♦in 100|jomi: F3↕  20> f8↕ 20> F9↕
+wow:switchlootrang♦macro:wow:switchuser♦in 100|jomi: f12↕
+wow:switchjump♦macro:wow:switchuser♦in 100|jomi: space↕
+
+wow:allpetattack♦ricochet 0 500 900 1300:macro:wow:switchpetattack
+wow:allpetcomeback♦ricochet 0 500 900 1300:macro:wow:switchpetcomeback
+wow:alllootrang♦ricochet 0 500 900 1300:macro:wow:switchlootrang
+wow:alljump♦ricochet 0 500 900 1300:macro:wow:switchlootrang
+
+wow:petandloot♦macro:wow:alllootrang♦in 2000|macro:wow:allpetattack♦in 4000|macro:wow:allpower0♦in 6000|macro:wow:allpower012 ♦in 8000|macro:wow:allpower9 ♦in 10000|macro:wow:allpetcomeback ♦in 12000|macro:wow:allpower8 ♦in 15000|macro:wow:alljump
